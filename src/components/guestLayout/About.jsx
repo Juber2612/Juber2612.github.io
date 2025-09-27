@@ -107,7 +107,7 @@ const About = () => {
           {/* Welcome Section */}
           <div className="about-text">
             <img
-              src="/images/shop.png"
+              src="/images/Shop.png"
               alt="Dosti Chicken Center Shop"
             />
             <h3>Welcome to Dosti Chicken Center</h3>

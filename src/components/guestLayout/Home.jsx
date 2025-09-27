@@ -36,10 +36,10 @@ const Home = () => {
 
         <Carousel.Item>
           <img
-          src="/images/boiler.jpeg"
+          src="/images/boiler.png"
           style={{
            width: '100%',
-           height: '500px',          // fixed height for all carousel images
+           height: '100%',          // fixed height for all carousel images
            objectFit: 'cover',       // ensures image covers the box without distortion
            borderRadius: '10px'
         }}
