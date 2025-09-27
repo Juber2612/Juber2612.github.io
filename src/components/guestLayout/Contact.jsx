@@ -1,7 +1,8 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
+    const navigate = useNavigate();
   return (
     <>
       <style>
@@ -96,20 +97,36 @@ const Contact = () => {
           <p>📧 <strong>Email:</strong> Dosti786@gmail.com</p>
         </div>
 
-        <a href="/contact" className="cta-button">
-          Send Us a Message
-        </a>
+        <div className="text-center">
+            <button
+          className="cta-button"
+          onClick={() => navigate("/contact")}
+          type="button"
+        >
+          Contact Us for Fresh Chicken Orders!
+        </button>
+         <a
+            href="https://wa.me/919370690520?text=Hello%20Dosti%20Chicken%20Center,%20I%20want%20to%20order%20fresh%20chicken."
+            target="_blank"
+            rel="noreferrer"
+            className="cta-button"
+            >
+            <FaWhatsapp size={24} /> Order on WhatsApp
+          </a>
+          </div>
 
         <div className="social-icons">
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-            <FaFacebookF />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <FaInstagram />
-          </a>
+         
           <a href="https://wa.me/919370690520" target="_blank" rel="noreferrer">
             <FaWhatsapp />
           </a>
+           <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <FaFacebookF />
+          </a>
+           <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <FaInstagram />
+          </a>
+
         </div>
       </section>
     </>
