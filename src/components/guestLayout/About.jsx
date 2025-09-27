@@ -1,6 +1,7 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <>
       <style>
@@ -146,9 +147,13 @@ const About = () => {
 
           {/* Call to Action */}
           <div className="text-center">
-            <a href="/contact" className="cta-button">
-              Contact Us for Fresh Chicken Orders!
-            </a>
+            <button
+          className="cta-button"
+          onClick={() => navigate("/contact")}
+          type="button"
+        >
+          Contact Us for Fresh Chicken Orders!
+        </button>
           </div>
         </div>
       </section>
